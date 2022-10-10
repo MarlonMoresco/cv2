@@ -1,0 +1,210 @@
+<html><head><style type="text/css">pre { margin: 1px }
+			.fmt0 {  } /* normal */
+			.fmt1 {  } /* background */
+			.fmt2 { background-color: #ffcabf; } /* line:error */
+			.fmt3 { background-color: #fffbbf; } /* line:warning */
+			.fmt4 { background-color: #bfd6ff; } /* line:badbox */
+			.fmt5 {  } /* line:bookmark */
+			.fmt6 {  } /* line:bookmark0 */
+			.fmt7 {  } /* line:bookmark1 */
+			.fmt8 {  } /* line:bookmark2 */
+			.fmt9 {  } /* line:bookmark3 */
+			.fmt10 {  } /* line:bookmark4 */
+			.fmt11 {  } /* line:bookmark5 */
+			.fmt12 {  } /* line:bookmark6 */
+			.fmt13 {  } /* line:bookmark7 */
+			.fmt14 {  } /* line:bookmark8 */
+			.fmt15 {  } /* line:bookmark9 */
+			.fmt16 { color: #555580; } /* magicComment */
+			.fmt17 { background-color: #a8cf83; } /* commentTodo */
+			.fmt18 { color: #808080; } /* comment */
+			.fmt19 { color: #800000; } /* keyword */
+			.fmt20 { font-weight: 8200;color: #0095ff; } /* extra-keyword */
+			.fmt21 { color: #808000; } /* math-keyword */
+			.fmt22 { border-bottom: 1px solid #0000ff;color: #0000ff; } /* link */
+			.fmt23 { font-weight: 8200;color: #0055ff; } /* align-ampersand */
+			.fmt24 { color: #008080; } /* verbatim */
+			.fmt25 { color: #800000; } /* sweave-block */
+			.fmt26 { font-weight: 8200;color: #0095ff; } /* sweave-delimiter */
+			.fmt27 { color: #800000; } /* pweave-block */
+			.fmt28 { font-weight: 8200;color: #0095ff; } /* pweave-delimiter */
+			.fmt29 { color: #804000; } /* picture */
+			.fmt30 { color: #c06000; } /* picture-keyword */
+			.fmt31 { font-weight: 8200;background-color: #ffff7f; } /* braceMatch */
+			.fmt32 { font-weight: 8200;color: #ffff7f;background-color: #c00000; } /* braceMismatch */
+			.fmt33 { color: #000000;background-color: #ffef0b; } /* search */
+			.fmt34 { color: #008000; } /* numbers */
+			.fmt35 { color: #509600; } /* math-delimiter */
+			.fmt36 { color: #202000; } /* math-text */
+			.fmt37 { color: #ff0000; } /* text */
+			.fmt38 { color: #ff0088; } /* escapeseq */
+			.fmt39 { border-bottom: 1px dashed #ff0000; } /* spellingMistake */
+			.fmt40 { border-bottom: 1px dashed #008000; } /* wordRepetition */
+			.fmt41 { border-bottom: 1px dashed #008000; } /* wordRepetitionLongRange */
+			.fmt42 { text-decoration: line-through; } /* badWord */
+			.fmt43 { border-bottom: 1px dashed #000080; } /* grammarMistake */
+			.fmt44 { background-color: #00ffa0; } /* grammarMistakeSpecial1 */
+			.fmt45 { background-color: #00c0ff; } /* grammarMistakeSpecial2 */
+			.fmt46 { background-color: #00ff00; } /* grammarMistakeSpecial3 */
+			.fmt47 { background-color: #c8ff61; } /* grammarMistakeSpecial4 */
+			.fmt48 { background-color: #ffbf9f; } /* latexSyntaxMistake */
+			.fmt49 { font-style: italic;color: #0000ff; } /* temporaryCodeCompletion */
+			.fmt50 { color: #000080; } /* environment */
+			.fmt51 { color: #008000; } /* referencePresent */
+			.fmt52 { border-bottom: 1px dashed #008000;color: #008000; } /* referenceMissing */
+			.fmt53 { border-bottom: 1px dashed #800080;color: #800080; } /* referenceMultiple */
+			.fmt54 { color: #008000; } /* citationPresent */
+			.fmt55 { border-bottom: 1px dashed #008000;color: #008000; } /* citationMissing */
+			.fmt56 { color: #008000; } /* packagePresent */
+			.fmt57 { border-bottom: 1px dashed #008000;color: #008000; } /* packageMissing */
+			.fmt58 { font-weight: 8200;color: #000000; } /* structure */
+			.fmt59 { background-color: #eeeeff; } /* current */
+			.fmt60 { background-color: #b2d8ff; } /* selection */
+			.fmt61 { background-color: #ffaaaa; } /* replacement */
+			.fmt62 { text-decoration: line-through;background-color: #ffaaaa; } /* diffDelete */
+			.fmt63 { background-color: #aaffaa; } /* diffAdd */
+			.fmt64 { background-color: #ffff50; } /* diffReplace */
+			.fmt65 { background-color: #ddffcc; } /* previewSelection */
+			.fmt66 { font-weight: 8200;color: #0095ff; } /* txs-test */
+			.fmt67 { font-weight: 8200; } /* txs-test-summary */
+			.fmt68 { color: #008000; } /* txs-test-pass */
+			.fmt69 { color: #c00000; } /* txs-test-fail */
+			.fmt70 { color: #ea8800; } /* txs-test-warn */
+			.fmt71 { color: #808000; } /* txs-test-qdebug */
+			.fmt72 { color: #ffa500; } /* dtx:guard */
+			.fmt73 { font-weight: 8200;color: #006400; } /* dtx:macro */
+			.fmt74 { color: #008080; } /* dtx:verbatim */
+			.fmt75 { color: #cc8100; } /* dtx:specialchar */
+			.fmt76 { font-weight: 8200;color: #10c010; } /* dtx:commands */
+			.fmt77 { color: #b200ff; } /* lua:keyword */
+			.fmt78 { color: #808080; } /* lua:comment */
+			.fmt79 { color: #804000; } /* asymptote:block */
+			.fmt80 { color: #800080; } /* asymptote:keyword */
+			.fmt81 { color: #808000; } /* asymptote:type */
+			.fmt82 { color: #008000; } /* asymptote:numbers */
+			.fmt83 { color: #000080; } /* asymptote:string */
+			.fmt84 { color: #808080; } /* asymptote:comment */
+			.fmt85 { color: #808080; } /* qtscript:comment */
+			.fmt86 { color: #008000; } /* qtscript:string */
+			.fmt87 { color: #000080; } /* qtscript:number */
+			.fmt88 { color: #808000; } /* qtscript:keyword */
+			.fmt89 { color: #800000; } /* qtscript:txs-variable */
+			.fmt90 { font-style: italic; } /* qtscript:txs-function */
+			.fmt91 { background-color: #ffff7f; } /* preedit */
+		</style></head><body><pre><span class="fmt19">\documentclass</span>[a4paper,12pt]{<span class="fmt56">article</span>} </pre>
+		<pre> </pre>
+		<pre><span class="fmt19">\usepackage</span>{<span class="fmt56">url</span>} </pre>
+		<pre><span class="fmt19">\usepackage</span>{<span class="fmt56">parskip</span>} 	 </pre>
+		<pre> </pre>
+		<pre><span class="fmt18">%other</span><span class="fmt18"> </span><span class="fmt18">packages</span><span class="fmt18"> </span><span class="fmt18">for</span><span class="fmt18"> </span><span class="fmt18">formatting</span> </pre>
+		<pre><span class="fmt19">\RequirePackage</span>{<span class="fmt56">color</span>} </pre>
+		<pre><span class="fmt19">\RequirePackage</span>{<span class="fmt56">graphicx</span>} </pre>
+		<pre><span class="fmt19">\usepackage</span>[usenames,dvipsnames]{<span class="fmt56">xcolor</span>} </pre>
+		<pre><span class="fmt19">\usepackage</span>[scale=0.9]{<span class="fmt56">geometry</span>} </pre>
+		<pre> </pre>
+		<pre><span class="fmt18">%tabularx</span><span class="fmt18"> </span><span class="fmt18">environment</span> </pre>
+		<pre><span class="fmt19">\usepackage</span>{<span class="fmt56">tabularx</span>} </pre>
+		<pre> </pre>
+		<pre><span class="fmt18">%for</span><span class="fmt18"> </span><span class="fmt18">lists</span><span class="fmt18"> </span><span class="fmt18">within</span><span class="fmt18"> </span><span class="fmt18">experience</span><span class="fmt18"> </span><span class="fmt18">section</span> </pre>
+		<pre><span class="fmt19">\usepackage</span>{<span class="fmt56">enumitem</span>} </pre>
+		<pre> </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">centered</span><span class="fmt18"> </span><span class="fmt18">version</span><span class="fmt18"> </span><span class="fmt18">of</span><span class="fmt18"> </span><span class="fmt18">'X'</span><span class="fmt18"> </span><span class="fmt18">col.</span><span class="fmt18"> </span><span class="fmt18">type</span> </pre>
+		<pre><span class="fmt19">\newcolumntype</span>{C}{>{<span class="fmt19">\centering\arraybackslash</span>}X}  </pre>
+		<pre> </pre>
+		<pre><span class="fmt18">%to</span><span class="fmt18"> </span><span class="fmt18">prevent</span><span class="fmt18"> </span><span class="fmt18">spillover</span><span class="fmt18"> </span><span class="fmt18">of</span><span class="fmt18"> </span><span class="fmt18">tabular</span><span class="fmt18"> </span><span class="fmt18">into</span><span class="fmt18"> </span><span class="fmt18">next</span><span class="fmt18"> </span><span class="fmt18">pages</span> </pre>
+		<pre><span class="fmt19">\usepackage</span>{<span class="fmt57">supertabular</span>} </pre>
+		<pre><span class="fmt19">\usepackage</span>{<span class="fmt56">tabularx</span>} </pre>
+		<pre><span class="fmt19">\newlength</span>{<span class="fmt19">\fullcollw</span>} </pre>
+		<pre><span class="fmt19">\setlength</span>{<span class="fmt19">\fullcollw</span>}{0.47<span class="fmt19">\textwidth</span>} </pre>
+		<pre> </pre>
+		<pre><span class="fmt18">%custom</span><span class="fmt18"> </span><span class="fmt20"><span class="fmt18">\section</span></span> </pre>
+		<pre><span class="fmt19">\usepackage</span>{<span class="fmt57">titlesec</span>}				 </pre>
+		<pre><span class="fmt19">\usepackage</span>{<span class="fmt56">multicol</span>} </pre>
+		<pre><span class="fmt19">\usepackage</span>{<span class="fmt56">multirow</span>} </pre>
+		<pre> </pre>
+		<pre><span class="fmt18">%CV</span><span class="fmt18"> </span><span class="fmt18">Sections</span><span class="fmt18"> </span><span class="fmt18">inspired</span><span class="fmt18"> </span><span class="fmt18">by:</span><span class="fmt18"> </span> </pre>
+		<pre><span class="fmt18">%http://stefano.italians.nl/archives/26</span> </pre>
+		<pre><span class="fmt19">\titleformat</span>{<span class="fmt20">\section</span>}{<span class="fmt19">\Large\scshape\raggedright</span>}{}{0em}{}[<span class="fmt19">\titlerule</span>] </pre>
+		<pre><span class="fmt19">\titlespacing</span>{<span class="fmt20">\section</span>}{0pt}{10pt}{10pt} </pre>
+		<pre> </pre>
+		<pre><span class="fmt18">%for</span><span class="fmt18"> </span><span class="fmt18">publications</span> </pre>
+		<pre><span class="fmt19">\usepackage</span>[style=authoryear,sorting=ynt, maxbibnames=2]{<span class="fmt56">biblatex</span>} </pre>
+		<pre> </pre>
+		<pre><span class="fmt18">%Setup</span><span class="fmt18"> </span><span class="fmt18">hyperref</span><span class="fmt18"> </span><span class="fmt18">package,</span><span class="fmt18"> </span><span class="fmt18">and</span><span class="fmt18"> </span><span class="fmt18">colours</span><span class="fmt18"> </span><span class="fmt18">for</span><span class="fmt18"> </span><span class="fmt18">links</span> </pre>
+		<pre><span class="fmt19">\usepackage</span>[unicode, draft=false]{<span class="fmt56">hyperref</span>} </pre>
+		<pre><span class="fmt19">\definecolor</span>{linkcolour}{rgb}{0,0.2,0.6} </pre>
+		<pre><span class="fmt19">\hypersetup</span>{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} </pre>
+		<pre><span class="fmt19">\addbibresource</span>{citations.bib} </pre>
+		<pre><span class="fmt19">\setlength\bibitemsep</span>{1em} </pre>
+		<pre> </pre>
+		<pre><span class="fmt18">%for</span><span class="fmt18"> </span><span class="fmt18">social</span><span class="fmt18"> </span><span class="fmt18">icons</span> </pre>
+		<pre><span class="fmt19">\usepackage</span>{<span class="fmt57">fontawesome5</span>} </pre>
+		<pre> </pre>
+		<pre><span class="fmt18">%debug</span><span class="fmt18"> </span><span class="fmt18">page</span><span class="fmt18"> </span><span class="fmt18">outer</span><span class="fmt18"> </span><span class="fmt18">frames</span> </pre>
+		<pre><span class="fmt18">%</span><span class="fmt19"><span class="fmt18">\usepackage</span></span><span class="fmt18">{showframe}</span> </pre>
+		<pre> </pre>
+		<pre><span class="fmt18">%----------------------------------------------------------------------------------------</span> </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18">	</span><span class="fmt18">BEGIN</span><span class="fmt18"> </span><span class="fmt18">DOCUMENT</span> </pre>
+		<pre><span class="fmt18">%----------------------------------------------------------------------------------------</span> </pre>
+		<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">document</span></span><span class="fmt20">}</span> </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">non-numbered</span><span class="fmt18"> </span><span class="fmt18">pages</span> </pre>
+		<pre>	<span class="fmt19">\pagestyle</span>{empty}  </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt18">%----------------------------------------------------------------------------------------</span> </pre>
+		<pre>	<span class="fmt18">%</span><span class="fmt18">	</span><span class="fmt18">TITLE</span> </pre>
+		<pre>	<span class="fmt18">%----------------------------------------------------------------------------------------</span> </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt20"><span class="fmt18">\begin{tabularx}</span></span><span class="fmt18">{</span><span class="fmt19"><span class="fmt18">\linewidth</span></span><span class="fmt18">}{</span><span class="fmt18"> </span><span class="fmt18">@{}X</span><span class="fmt18"> </span><span class="fmt18">X@{}</span><span class="fmt18"> </span><span class="fmt18">}</span> </pre>
+		<pre>		<span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt19"><span class="fmt18">\huge</span></span><span class="fmt18">{Your</span><span class="fmt18"> </span><span class="fmt18">Name}</span><span class="fmt19"><span class="fmt18">\vspace</span></span><span class="fmt18">{2pt}</span><span class="fmt18"> </span><span class="fmt18">&amp;</span><span class="fmt18"> </span><span class="fmt19"><span class="fmt18">\hfill</span></span><span class="fmt18"> </span><span class="fmt19"><span class="fmt18">\emoji</span></span><span class="fmt18">{incoming-envelope}</span><span class="fmt18"> </span><span class="fmt18">email@email.com</span><span class="fmt18"> </span><span class="fmt19"><span class="fmt18">\\</span></span> </pre>
+		<pre>		<span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt19"><span class="fmt18">\raisebox</span></span><span class="fmt18">{-0.05</span><span class="fmt19"><span class="fmt18">\height</span></span><span class="fmt18">}</span><span class="fmt19"><span class="fmt18">\faGithub</span></span><span class="fmt18">\</span><span class="fmt18"> </span><span class="fmt18">username</span><span class="fmt18"> </span><span class="fmt18">\</span><span class="fmt18"> </span><span class="fmt18">|</span><span class="fmt18"> </span><span class="fmt18">\</span> </pre>
+		<pre>		<span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt19"><span class="fmt18">\raisebox</span></span><span class="fmt18">{-0.00</span><span class="fmt19"><span class="fmt18">\height</span></span><span class="fmt18">}</span><span class="fmt19"><span class="fmt18">\faLinkedin</span></span><span class="fmt18">\</span><span class="fmt18"> </span><span class="fmt18">username</span><span class="fmt18"> </span><span class="fmt18">\</span><span class="fmt18"> </span><span class="fmt18">|</span><span class="fmt18"> </span><span class="fmt18">\</span><span class="fmt18"> </span><span class="fmt19"><span class="fmt18">\raisebox</span></span><span class="fmt18">{-0.05</span><span class="fmt19"><span class="fmt18">\height</span></span><span class="fmt18">}</span><span class="fmt19"><span class="fmt18">\faGlobe</span></span><span class="fmt18"> </span><span class="fmt18">\</span><span class="fmt18"> </span><span class="fmt18">mysite.com</span><span class="fmt18">  </span><span class="fmt18">&amp;</span><span class="fmt18"> </span><span class="fmt19"><span class="fmt18">\hfill</span></span><span class="fmt18"> </span><span class="fmt19"><span class="fmt18">\emoji</span></span><span class="fmt18">{calling}</span><span class="fmt18"> </span><span class="fmt18">number</span> </pre>
+		<pre>		<span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt20"><span class="fmt18">\end{tabularx}</span></span> </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">tabularx</span></span><span class="fmt20">}</span>{<span class="fmt19">\linewidth</span>}{@{} C @{}} </pre>
+		<pre>		<span class="fmt19">\Huge</span>{Marlon <span class="fmt39">Moresco</span>} <span class="fmt19">\\</span>[7.5pt] </pre>
+		<pre>		<span class="fmt19">\href</span>{https://github.com/MarlonMoresco}{<span class="fmt19">\raisebox</span>{-0.05<span class="fmt19">\height</span>}<span class="fmt19">\faGithub</span>\ MarlonMoresco} \ <span class="fmt35">$</span><span class="fmt34">|</span><span class="fmt35">$</span> \  </pre>
+		<pre>		<span class="fmt19">\href</span>{https://linkedin.com/in/marlon-moresco-066bbab4 </pre>
+		<pre>		}{<span class="fmt19">\raisebox</span>{-0.05<span class="fmt19">\height</span>}<span class="fmt19">\faLinkedin</span>\ Marlon Moresco} \ <span class="fmt35">$</span><span class="fmt34">|</span><span class="fmt35">$</span> \  </pre>
+		<pre>		<span class="fmt19">\href</span>{https://marlonmoresco.github.io/cv/}{<span class="fmt19">\raisebox</span>{-0.05<span class="fmt19">\height</span>}<span class="fmt19">\faGlobe</span> \ marlonmoresco.github.io} \  <span class="fmt19">\\</span>  </pre>
+		<pre>		<span class="fmt19">\href</span>{marlonmoresco@hotmail.com}{<span class="fmt19">\raisebox</span>{-0.05<span class="fmt19">\height</span>}<span class="fmt19">\faEnvelope</span> \ marlonmoresco@hotmail.com}\ <span class="fmt35">$</span><span class="fmt34">|</span><span class="fmt35">$</span> \  </pre>
+		<pre>		<span class="fmt19">\href</span>{https://www.researchgate.net/profile/Marlon-Moresco </pre>
+		<pre>		}{<span class="fmt19">\raisebox</span>{-0.05<span class="fmt19">\height</span>}<span class="fmt19">\faResearchgate</span>\ Marlon Moresco}  <span class="fmt19">\\</span> </pre>
+		<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">tabularx</span></span><span class="fmt20">}</span> </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt18">%----------------------------------------------------------------------------------------</span> </pre>
+		<pre>	<span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">EXPERIENCE</span><span class="fmt18"> </span><span class="fmt18">SECTIONS</span> </pre>
+		<pre>	<span class="fmt18">%----------------------------------------------------------------------------------------</span> </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt18">%Interests/</span><span class="fmt18"> </span><span class="fmt18">Keywords/</span><span class="fmt18"> </span><span class="fmt18">Summary</span> </pre>
+		<pre>	<span class="fmt20">\section</span>{<span class="fmt58">Summary</span>} </pre>
+		<pre>	I have a <span class="fmt39">Ph</span>.D. in Finance from Federal University of Rio <span class="fmt39">Grande</span> do <span class="fmt39">Sul</span>. Currently, I am a postdoctoral fellow at <span class="fmt39">Concordia</span> University under Professors <span class="fmt19">\href</span>{https://www.concordia.ca/faculty/melina-mailhot.html}{Melina Mailhot} and <span class="fmt19">\href</span>{https://utstat.toronto.edu/pesenti/}{Silvana Pesenti}. </pre>
+		<pre>	 </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt18">%----------------------------------------------------------------------------------------</span> </pre>
+		<pre>	<span class="fmt18">%</span><span class="fmt18">	</span><span class="fmt18">EDUCATION</span> </pre>
+		<pre>	<span class="fmt18">%----------------------------------------------------------------------------------------</span> </pre>
+		<pre>	<span class="fmt20">\section</span>{<span class="fmt58">Education</span>} </pre>
+		<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">tabularx</span></span><span class="fmt20">}</span>{<span class="fmt19">\linewidth</span>}{@{}l X@{}}	 </pre>
+		<pre>		 </pre>
+		<pre>		2019 - 2022 <span class="fmt23">&amp;</span> PhD in <span class="fmt39">Bussines</span> Administration <span class="fmt19">\hfill</span> <span class="fmt39">Universidade</span> Federal do Rio <span class="fmt39">Grande</span> <span class="fmt40">do</span> <span class="fmt39">Sul</span>, <span class="fmt39">UFRGS</span> <span class="fmt19">\\</span>  </pre>
+		<pre>		 </pre>
+		<pre>		2017 - 2019 <span class="fmt23">&amp;</span> <span class="fmt39">MSc</span> in <span class="fmt39">Bussines</span> Administration <span class="fmt19">\hfill</span> <span class="fmt39">Universidade</span> Federal do Rio <span class="fmt39">Grande</span> <span class="fmt40">do</span> <span class="fmt39">Sul</span>, <span class="fmt39">UFRGS</span> <span class="fmt19">\\</span> </pre>
+		<pre>		 </pre>
+		<pre>		2012 - 2017 <span class="fmt23">&amp;</span> <span class="fmt39">BSc</span> in <span class="fmt39">Bussines</span> Administration <span class="fmt19">\hfill</span> <span class="fmt39">Universidade</span> Federal de Santa Maria, <span class="fmt39">UFSM</span> <span class="fmt19">\\</span> </pre>
+		<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">tabularx</span></span><span class="fmt20">}</span> </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt18">%----------------------------------------------------------------------------------------</span> </pre>
+		<pre>	<span class="fmt18">%</span><span class="fmt18">	</span><span class="fmt18">PUBLICATIONS</span> </pre>
+		<pre>	<span class="fmt18">%----------------------------------------------------------------------------------------</span> </pre>
+		<pre>	<span class="fmt20">\section</span>{<span class="fmt58">Publications</span>} </pre>
+		<pre>Find my publications on <span class="fmt19">\href</span>{https://scholar.google.com/citations?user=-9VZKEIAAAAJ&amp;hl}{Google Scholar} </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt18">%----------------------------------------------------------------------------------------</span> </pre>
+		<pre>	<span class="fmt18">%</span><span class="fmt18">	</span><span class="fmt18">SKILLS</span> </pre>
+		<pre>	<span class="fmt18">%----------------------------------------------------------------------------------------</span> </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt19">\vfill</span> </pre>
+		<pre>	<span class="fmt19"><span class="fmt48">\center</span></span>{<span class="fmt19">\footnotesize</span> Last updated: <span class="fmt19">\today</span>} </pre>
+		<pre>	 </pre>
+		<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">document</span></span><span class="fmt20">}</span> </pre></body></html>
